@@ -1,0 +1,42 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="flights">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="flight" type="Flight" maxOccurs="unbounded" minOccurs="5" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="Flight">
+		<xs:sequence>
+			<xs:element name="departure" type="Departure" maxOccurs="1" minOccurs="1" />
+			<xs:element name="destination" type="Destination" maxOccurs="1" minOccurs="1" />
+			<xs:element type="xs:integer" name="gate" />
+			<xs:element name="aircraft" type="Aircraft" maxOccurs="1" minOccurs="1" />
+		</xs:sequence>
+		<xs:attribute type="xs:integer" name="flightNumber" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="Departure">
+		<xs:sequence>
+			<xs:element type="xs:string" name="city" />
+			<xs:element type="xs:date" name="date" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Destination">
+		<xs:sequence>
+			<xs:element type="xs:string" name="city" />
+			<xs:element type="xs:date" name="date" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Aircraft">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:integer" name="aircraftNumber" use="required" />
+				<xs:attribute type="xs:string" name="aircraftType" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:schema>

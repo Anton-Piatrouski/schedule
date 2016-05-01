@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flights>
+	<flight flightNumber="1">
+		<departure>
+			<city>Los Angeles</city>
+			<date>2016-05-01</date>
+		</departure>
+		<destination>
+			<city>Seattle</city>
+			<date>2016-05-01</date>
+		</destination>
+		<gate>5</gate>
+		<aircraft aircraftNumber="10" aircraftType="Q400" />
+	</flight>
+	<flight flightNumber="2">
+		<departure>
+			<city>Los Angeles</city>
+			<date>2016-05-02</date>
+		</departure>
+		<destination>
+			<city>Salt Lake City</city>
+			<date>2016-05-02</date>
+		</destination>
+		<gate>6</gate>
+		<aircraft aircraftNumber="11" aircraftType="CRJ700" />
+	</flight>
+	<flight flightNumber="3">
+		<departure>
+			<city>Denver</city>
+			<date>2016-05-03</date>
+		</departure>
+		<destination>
+			<city>San Francisco</city>
+			<date>2016-05-03</date>
+		</destination>
+		<gate>7</gate>
+		<aircraft aircraftNumber="12" aircraftType="CRJ700" />
+	</flight>
+	<flight flightNumber="4">
+		<departure>
+			<city>New York</city>
+			<date>2016-05-04</date>
+		</departure>
+		<destination>
+			<city>Frankfurt</city>
+			<date>2016-05-04</date>
+		</destination>
+		<gate>8</gate>
+		<aircraft aircraftNumber="13" aircraftType="Boeing" />
+	</flight>
+	<flight flightNumber="5">
+		<departure>
+			<city>New York</city>
+			<date>2016-05-05</date>
+		</departure>
+		<destination>
+			<city>Bucharest</city>
+			<date>2016-05-05</date>
+		</destination>
+		<gate>9</gate>
+		<aircraft aircraftNumber="14" aircraftType="Boeing" />
+	</flight>
+</flights>
